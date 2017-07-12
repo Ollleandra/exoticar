@@ -1,0 +1,99 @@
+@media screen and (max-width:768px){
+  .mainMenu, .banner, .pageAbout, .pageContact, .footer {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .banner {
+    height: 320px;
+    background: url(../img/car-for-about.jpg) no-repeat 0 55%;
+    background-size: cover;
+
+    .banner-filter {
+      height: 320px;
+    }
+    .slogan {
+      top:15%;
+      font-size: 1.8em;
+    }
+    .slogan-cont{
+      top:45%;
+      font-size: 1.2em;
+    }
+  }
+
+  label {
+        display: block;
+        position: fixed;
+        z-index: 10;
+   }
+  .mainMenu{
+        top:-100vh;
+        height:100vh;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
+        -webkit-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+
+        p {
+            width: 100%;
+            flex-grow: 0;
+            max-width: none;
+            text-align: center;
+            
+            &.logo{
+                text-align: center;
+                line-height: 5;
+            }
+    
+            a {
+                font-size: 1.3em;
+                line-height: 2;
+            }
+        }
+  }
+  #menu-checkbox:checked {
+        &~.mainMenu{
+            display: flex;
+            top:0;
+        }
+   }
+  .mainSlider{
+        flex-direction:column;
+
+        .left-bar, .right-bar {
+          width: 100%;
+          padding-left: 60px;
+          padding-right: 60px;
+          box-sizing: border-box;
+        }
+      .left-bar{
+        background: #ffffff;
+      }
+    }
+  .pageAbout, .pageContact{
+    padding-top:30px;
+  }
+  .pageContact{
+    .leftText {
+      width: 100%;
+    }
+    .map {
+      width: 95%;
+      margin-top: 0px;
+      margin-right: 5%;
+    }
+  }
+  .footer{
+    flex-wrap: wrap;
+    align-content:space-around;
+
+    .footerMenu{
+      flex-basis:50%;
+      margin-bottom:30px;
+    }
+  }
+}
